@@ -2,17 +2,12 @@
 
 int main(void)
  {
-    int x,y,z,m;
-    int a,b,c;
-    x=2;
-    z=1;
-    a=3;
-    b=4;
-    c=5;
+    int sec;
 
-    y=a*x*x + b*x+ c;
-    m=(x+y+z)/3;
+    printf("input the number of seconds: ");
+    scanf("%i", &sec);
 
-    printf("y=%d, m=%d\n", y, m);
-
+    printf("time is: %i:%i\n", sec/60,sec%60);
+    
+    return 0;
 }
